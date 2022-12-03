@@ -1,14 +1,60 @@
-
-
-.container{
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
+html, body{
+    height: 100%;
 }
+
+.container-fluid {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
 
 .row{
     width: 100%;
     margin: 0;
-    max-height: 100%;
+    overflow: hidden;
+}
+
+
+.header{
+    height: 10%;
+    background-color: rgb(240, 240, 240);
+}
+
+.main-body{
+    height: 90%;
+}
+
+.side-bar{
+    background-color: rgb(240, 240, 240);
+}
+
+.work-space{
+    padding-top: 1%;
+    background-color: rgb(246, 246, 246);
+}
+
+.footer{
+    height: 5%;
+}
+
+.item{
+    border-radius: 1% 1% 1% 1%;
+    background-color: rgb(240, 240, 240);
+    word-wrap: break-word;
+    max-width: 30%;
+    max-height: 35%;
+    height: auto;
+    overflow-y: auto;
+    color:rgb(64, 64, 64);
+}
+
+.task-item{
+}
+
+.progress-bars{
+    position: relative;
+    left: 70%;
+    top: -35%;
 }
 
