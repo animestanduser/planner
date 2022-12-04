@@ -47,9 +47,11 @@ html, body{
     height: auto;
     overflow-y: auto;
     color:rgb(64, 64, 64);
+    margin: 1%;
 }
 
 .task-item{
+    width: 100%;
 }
 
 .progress-bars{
@@ -61,17 +63,17 @@ html, body{
     align-items: stretch;
     margin-left: 0;
     padding-left: 0;
-    width: 100%;
+    width: 30%;
 }
 
 #sidebar {
-    min-width: 100%;
+    min-width: 15%;
     max-width: 100%;
     
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -15%;
 }
 
 a[data-toggle="collapse"] {
@@ -102,7 +104,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: rgb(62, 62, 62);
 }
 
 a, a:hover, a:focus {
@@ -113,23 +115,23 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #7386D5;
-    color: #fff;
+    background-color: rgb(240, 240, 240);
+    color: rgb(62, 62, 62);
     transition: all 0.3s;
 }
 
-#sidebar .sidebar-header {
+.sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background-color: rgb(240, 240, 240);
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    background-color: rgb(240, 240, 240);
 }
 
 #sidebar ul p {
-    color: #fff;
+    color: rgb(40, 40, 40);
     padding: 10px;
 }
 
@@ -139,16 +141,16 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: rgb(62, 62, 62);
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+    color: rgb(62, 62, 62);
+    background-color: rgb(240, 240, 240);
 }
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background-color: rgb(240, 240, 240);
 }

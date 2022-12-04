@@ -18,18 +18,18 @@
     
     <div class="container-fluid">
         <div class="row flex-fill header border-bottom">
-          <div class="col-md-12">Space for header, there will be some logo, profile picutre, option etc. or might even be delated later</div>
+          <div class="col-md-12"><div class="sidebar-header">
+            <h3>Planner</h3>
+          </div>
+        </div>
         </div>
         <div class="row flex-fill content main-body">
-          <div class="wrapper col-md-2">
+          <div class="wrapper col-md-12">
             <!-- Sidebar -->
             <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Bootstrap Sidebar</h3>
-                </div>
         
                 <ul class="list-unstyled components">
-                    <p>Opsie daisie</p>
+                    <p>List of actions</p>
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -47,42 +47,17 @@
                     <li>
                         <a href="#">About</a>
                     </li>
-                    <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="#">Page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
                 </ul>
             </nav>
-        
-        </div>
-
-          <div class="col-md-10 work-space">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 0;">
               <div class="container-fluid">
-      
-                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <button type="button" id="sidebarCollapse" class="btn btn-info" style="position:relative;top:-47%;background-color: rgb(97, 220, 101);border-radius: 0% 75% 75% 0%; border: none;">
                       <i class="fas fa-align-left"></i>
-                      <span>Toggle Sidebar</span>
                   </button>
       
               </div>
-          </nav>
+            </nav>
+            
             <div class="col-md-1 item task-item border">
                 <span class="border-bottom">The first item, just experimating</span>
                 <div class="task-list">
@@ -108,6 +83,10 @@
               <span>Progress bar</span></br>
               <span>Progress bar</span></br>
             </div>
+        </div>
+
+          
+            
           </div>
         </div>
       </div>
