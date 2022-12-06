@@ -42,15 +42,18 @@ html, body{
     border-radius: 1% 1% 1% 1%;
     background-color: rgb(240, 240, 240);
     word-wrap: break-word;
-    max-width: 40%;
+    min-height: 35%;
     max-height: 35%;
-    min-height: 30%;
-    height: 30%;
+    height: 35%;
     height: auto;
+    max-width: 100%;
     overflow-y: auto;
     color:rgb(64, 64, 64);
     margin: 1%;
     padding: 0;
+    resize: both;
+    overflow: auto;
+
 }
 
 .item-header{

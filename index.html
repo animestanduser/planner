@@ -63,7 +63,7 @@
                 <div class="item-workspace">
                   <div class="item-task border-bottom">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
                       <label class="form-check-label" for="flexCheckDefault">
                         Task 1
                       </label>
@@ -71,7 +71,7 @@
                   </div>
                   <div class="item-task border-bottom">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
                       <label class="form-check-label" for="flexCheckDefault">
                         Task 2
                       </label>
@@ -79,7 +79,7 @@
                   </div>
                   <div class="item-task border-bottom">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
                       <label class="form-check-label" for="flexCheckDefault">
                         Task 3
                       </label>
@@ -89,17 +89,13 @@
                 <div class="item-progress-space border-top">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
-                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                      40%
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="progressbar">
+                      percentage
                     </div>
                   </div>
-                  
-                </div>
             </div>
-        </div>
-
-          
             
+          </div>
 
 
       </div>
