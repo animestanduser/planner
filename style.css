@@ -42,19 +42,34 @@ html, body{
     border-radius: 1% 1% 1% 1%;
     background-color: rgb(240, 240, 240);
     word-wrap: break-word;
-    max-width: 30%;
+    max-width: 40%;
     max-height: 35%;
+    min-height: 30%;
+    height: 30%;
     height: auto;
     overflow-y: auto;
     color:rgb(64, 64, 64);
     margin: 1%;
+    padding: 0;
 }
 
-.task-item{
-    width: 100%;
+.item-header{
+    padding: 5%;
 }
 
-.progress-bars{
+.item-workspace{
+    padding: 2%;
+}
+
+.item-task{
+    padding: 5%;
+    background-color: rgb(245, 245, 245);
+}
+
+.item-progress-space{
+    height: 20%;
+    padding: 5%;
+
 }
 
 
@@ -63,7 +78,7 @@ html, body{
     align-items: stretch;
     margin-left: 0;
     padding-left: 0;
-    width: 30%;
+    width: 100%;
 }
 
 #sidebar {
@@ -154,3 +169,4 @@ ul ul a {
     padding-left: 30px !important;
     background-color: rgb(240, 240, 240);
 }
+
