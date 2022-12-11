@@ -19,6 +19,7 @@ html, body{
 .header{
     height: 10%;
     background-color: rgb(240, 240, 240);
+
 }
 
 .main-body{
@@ -27,6 +28,8 @@ html, body{
 
 .side-bar{
     background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 100%;
 }
 
 .work-space{
@@ -140,7 +143,7 @@ a, a:hover, a:focus {
 
 .sidebar-header {
     padding: 20px;
-    background-color: rgb(240, 240, 240);
+
 }
 
 #sidebar ul.components {
