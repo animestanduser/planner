@@ -25,51 +25,17 @@ function addProgress() {
     }
 }
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-    // create a new div element 
-	var newDiv = document.createElement("div"); 
-    // assigning class name to the new div
-    newDiv.className = "item-task border-bottom";
-    newDiv.id = "newdiv1";
+function changeProgress(id) {
+    var checkBox = document.getElementById("flexCheckDefault");
 
-    var newFormItem = document.createElement("input");
-    newFormItem.className = "form-check-input";
-    newFormItem.id = "flexCheckDefault";
-    newFormItem.type = "checkbox";
-    newFormItem.value = "";
-    newFormItem.onclick= "addProgress(this)";
+    var percent = 10;
 
-    var newFormLabel = document.createElement("label");
-    newFormLabel.className = "form-check-label";
-    newFormLabel.id = "newFormLabelId";
-    newFormLabel.for = "flexcheckDefault";
-
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
-    var t = document.createTextNode(inputValue);
-    newFormLabel.appendChild(t);
-
-    if (inputValue === '') {
-      alert("You must write something!");
+    if(checkBox.checked == true){
+        percent = perecent > 90 ? 10 : percent + 10;
+        id.style.width = percent + "%";
     } else {
-        document.getElementById("myUL").appendChild(newDiv);
-        document.getElementById("newdiv1").appendChild(newFormItem);
-        document.getElementById("flexCheckDefault").appendChild(newFormLabel);
-        document.getElementById("flexCheckDefault").appendChild(li);
+        percent = percent > 90 ? 10 : percent - 10;
+        id.style.width = percent + "%";
     }
-    document.getElementById("myInput").value = "";
-  
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
-  
-    for (i = 0; i < close.length; i++) {
-      close[i].onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none";
-      }
-    }
-  }
+}
+
