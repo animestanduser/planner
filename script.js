@@ -39,3 +39,13 @@ function changeProgress(id) {
     }
 }
 
+function Task(name){
+    this.taskName = ""
+}
+
+var newTask = new Task();
+
+function createNewTask(){
+    newTask.taskName = newTaskForm.taskNameForm.value;
+    document.getElementById("item-workspace").innerHTML += '<div class="item-task border-bottom"><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)"><label class="form-check-label" for="flexCheckDefault">' + newTask.taskName + '</label></div></div>';     
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row flex-fill header border-bottom" style="padding: 0; height: 100%;">
+          <div class="col-md-12" style="padding: 0; height: 100%;">
+            <div  style="margin:0; padding: 1%;">
+                <h4>Constructors:
+                    <form name="newTaskForm" id="formForTask" target="stupidFrame">
+                        <p>New name of task: </p>
+                        <input type="text" name="taskNameForm">
+                        <input type="submit" id="submit" name="saveTaskForm" onclick="createNewTask()">
+                    </form>
+                    <iframe name="stupidFrame" id="stupidFrame" style="display: none;"></iframe>
+                    <p id="demo"></p>
+                    <p id="new"></p>
+
+                </h4>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script>
+        function Task(name){
+            this.taskName = ""
+        }
+
+        var newTask = new Task();
+
+        function createNewTask(){
+            newTask.taskName = newTaskForm.taskNameForm.value;
+            document.getElementById("new").innerHTML += '<div class="item-task border-bottom"><div class="form-check"><label class="form-check-label" for="flexCheckDefault">' + newTask.taskName + '</label></div></div>';     
+        }
+    </script>
+
+</body>

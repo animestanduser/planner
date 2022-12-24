@@ -58,8 +58,55 @@
             </nav>
 
             <div class="col-md-2 item border">
+              
+              <div class="item-header border-bottom">
+                <form name="newTaskForm" id="formForTask" target="stupidFrame">
+                <input type="text" name="taskNameForm" placeholder="Write new task name">
+                <input type="submit" id="submit" name="saveTaskForm" onclick="createNewTask()">
+              </form></div>
+                <div class="item-workspace" id="item-workspace">
+                  <iframe name="stupidFrame" id="stupidFrame" style="display: none;"></iframe>
+                <!--
+                  <div class="item-task border-bottom">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Task 1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-task border-bottom">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Task 2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-task border-bottom">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Task 3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              -->
+                <div class="item-progress-space border-top">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="progressbar">
+                      percentage
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+<!--
+            <div class="col-md-2 item border">
               <div class="item-header border-bottom">Item 1</div>
-                <div class="item-workspace">
+                <div class="item-workspace" id="item-workspace">
                   <div class="item-task border-bottom">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
@@ -95,50 +142,7 @@
                 </div>
             
               </div>
-
-              <div class="col-md-2 item border">
-              
-                <div class="item-header border-bottom">Item 1</div>
-                  <div class="item-workspace">
-                    <div class="item-task border-bottom">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Task 1
-                        </label>
-                      </div>
-                    </div>
-                    <div class="item-task border-bottom">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Task 2
-                        </label>
-                      </div>
-                    </div>
-                    <div class="item-task border-bottom">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="addProgress(this)">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Task 3
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-progress-space border-top">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
-                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="progressbar">
-                        percentage
-                      </div>
-                    </div>
-                  </div>
-              
-                </div>
-
-                
-		
-
+-->
       </div>
 
       
