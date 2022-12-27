@@ -24,32 +24,32 @@
         </div>
         </div>
           <div class="row flex-fill content main-body">
-            <div class="wrapper col-md-12" style="padding: 0;">
+            <div class="wrapper col-md-12" style="padding: 0;" id="container">
             <!-- Sidebar -->
-              <nav id="sidebar">
+              <nav id="sidebar" class="border-right">
                 
                 <ul class="list-unstyled components">
                     <p>List of actions</p>
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">-----</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a href="#">Home 1</a>
+                                <a href="#">+</a>
                             </li>
                             <li>
-                                <a href="#">Home 2</a>
+                                <a href="#">+</a>
                             </li>
                             <li>
-                                <a href="#">Home 3</a>
+                                <a href="#">+</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#" onclick="createNewTaskList()">Add new task-list</a>
                     </li>
                 </ul>
               </nav>
-              <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 0;">
+              <nav class="navbar navbar-expand-lg navbar-light" style="padding-left: 0;     background-color: #FFFFFF;">
                 <div class="container-fluid">
                   <button type="button" id="sidebarCollapse" class="btn btn-info" style="position:relative;top:-47%;background-color: rgb(97, 220, 101);border-radius: 0% 75% 75% 0%; border: none;">
                       <i class="fas fa-align-left"></i>
@@ -61,8 +61,8 @@
               
               <div class="item-header border-bottom">
                 <form name="newTaskForm" id="formForTask" target="stupidFrame">
-                <input type="text" name="taskNameForm" placeholder="Write new task name">
-                <input type="submit" id="submit" name="saveTaskForm" onclick="createNewTask()">
+                <input type="text" name="taskNameForm" placeholder="Write new task name" class="input-field">
+                <input type="submit" id="submit" name="saveTaskForm" onclick="createNewTask()" class="input-field-button"><i class="fa-solid fa-plus"></i></input>
               </form></div>
                 <div class="item-workspace" id="item-workspace">
                   <iframe name="stupidFrame" id="stupidFrame" style="display: none;"></iframe>
@@ -93,7 +93,7 @@
                   </div>
                 </div>
               -->
-                <div class="item-progress-space border-top">
+                <div class="item-progress-space">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="progressbar">
